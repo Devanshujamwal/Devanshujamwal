@@ -1,0 +1,2 @@
+:HL["/Devanshujamwal/_next/static/css/d492b3a60f75402a.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}},"staleTime":300,"buildId":"yX2p48ArD9O_1vYhLTv8L"}

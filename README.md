@@ -1,34 +1,84 @@
-<h1 align="center">Hi 👋, I'm Devanshu Jamwal</h1>
-<h3 align="center">Trying my hands on IT Infrastructure and Cyber security.</h3>
+# Devanshu Jamwal — IT portfolio
 
-<p align="center"> <img src="https://komarev.com/ghpvc/?username=Devanshujamwal&label=Profile%20views&color=0e75b6&style=flat" alt="Devanshujamwal" /> </p>
+A personal portfolio for entry-level IT support, systems, networking, infrastructure, and cloud roles. Built with Next.js App Router, TypeScript, and Tailwind CSS. This branch contains the portable Next.js source and the prebuilt GitHub Pages site in `docs/`.
 
-📫 How to reach me: *jamwaldevanshu@gmail.com*
+## Setup
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://www.linkedin.com/in/Devanshujamwal/" target="blank"><img align="center" src="https://www.edigitalagency.com.au/wp-content/uploads/Linkedin-logo-icon-png.png" alt="" height="40" width="40" /></a>
-</p>
+Node.js 22 or later is recommended. This repository uses the pinned pnpm version in `package.json` and its committed lockfile.
 
-<h3 align="left">Programming Languages, Frameworks, Database And Cloud Technologies:</h3>
-<p align="left"> 
-  <a href="https://www.w3schools.com/python/" target="_blank"> <img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png" alt="Python" width="50" height="40"/></a>
-  <a href="https://www.w3schools.com/java/" target="_blank"> <img src="https://cdn.iconscout.com/icon/free/png-256/java-60-1174953.png" alt="Java" width="40" height="40"/></a>
-  <a href="https://www.w3schools.com/js/" target="_blank"> <img src="https://cdn.iconscout.com/icon/free/png-256/javascript-2038874-1720087.png" alt="JavaScript" width="50" height="40"/></a>
-  <a href="https://www.w3schools.com/HTML/" target="_blank"> <img src="https://cdn-icons-png.flaticon.com/512/888/888859.png" alt="HTML" width="40" height="40"/></a>
-  <a href="https://www.w3schools.com/css/" target="_blank"> <img src="https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/css/css.png" alt="CSS" width="40" height="40"/></a>
-  <a href="https://nodejs.org/en/" target="_blank"> <img src="https://icon-library.com/images/node-js-icon/node-js-icon-8.jpg" alt="NodeJS" width="40" height="40"> </a>
-  <a href="https://reactjs.org/" target="_blank"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png" alt="ReactJS" width="40" height="40"> </a>
-  <a href="https://www.djangoproject.com/" target="_blank"> <img src="https://icon-library.com/images/django-icon/django-icon-0.jpg" alt="DJango" width="40" height="40"> </a>
-  <a href="https://www.mysql.com/" target="_blank"> <img src="https://d1.awsstatic.com/asset-repository/products/amazon-rds/1024px-MySQL.ff87215b43fd7292af172e2a5d9b844217262571.png" alt="MySQL" width="60" height="40"> </a>
-  <a href="https://www.postgresql.org/" target="_blank"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/640px-Postgresql_elephant.svg.png" alt="PostgreSQL" width="40" height="40"> </a>
-  <a href="https://www.mongodb.com/" target="_blank"> <img src="https://mpng.subpng.com/20190111/thz/kisspng-mongodb-logo-database-nosql-postgresql-how-to-create-an-outstanding-tech-stack-clickup-bl-5c391bdf9cff48.4731136215472465596431.jpg" alt="MongoDB" width="40" height="40"> </a>
-  <a href="https://redis.io/" target="_blank"> <img src="https://plugins.jetbrains.com/files/12820/149292/icon/pluginIcon.svg" alt="Redis" width="50" height="40"> </a>
-  <a href="https://aws.amazon.com/" target="_blank"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/800px-Amazon_Web_Services_Logo.svg.png" alt="AWS" width="50" height="40"> </a>
-  <a href="https://www.terraform.io/" target="_blank"> <img src="https://coralogix.com/wp-content/uploads/2021/03/terraform@2x.png" alt="Terraform" width="50" height="40"> </a>
-  <a href="https://www.packer.io/" target="_blank"> <img src="https://miro.medium.com/max/678/1*HF8zcJ-ynq5ldGlIFU4taw.png" alt="Packer" width="55" height="42"> </a>
-  <a href="https://www.docker.com/" target="_blank"> <img src="https://developers.redhat.com/sites/default/files/styles/article_feature/public/blog/2014/05/homepage-docker-logo.png?itok=zx0e-vcP" alt="Docker" width="50" height="40"> </a>
-  <a href="https://kubernetes.io/" target="_blank"> <img src="https://juststickers.in/wp-content/uploads/2018/11/kubernetes-wordmark.png" alt="Kubernetes" width="45" height="40"> </a>
-    <a href="https://about.gitlab.com/" target="_blank"> <img src="https://gitlab.com/uploads/-/system/group/avatar/6543/logo-extra-whitespace.png" alt="GitLab" width="50" height="40"> </a>
-  <a href="https://www.travis-ci.com/" target="_blank"> <img src="https://www.benmather.info/post/2019-06-06-travis-ci/featured.png" alt="TravisCI" width="52" height="45"> </a>
-</p>
+```bash
+corepack enable
+pnpm install --frozen-lockfile
+pnpm run dev
+```
+
+You can also use `npm install` and `npm run dev`. The committed pnpm lockfile provides the reproducible install.
+
+## Publish the prepared website
+
+The source is on the `portfolio` branch of `Devanshujamwal/Devanshujamwal`. The `main` branch and its profile README remain unchanged.
+
+1. Open this repository's **Settings → Pages**.
+2. Set **Source** to **Deploy from a branch**.
+3. Choose the **portfolio** branch and **/docs**, then **Save**.
+
+After GitHub completes its deployment, the project address will be `https://devanshujamwal.github.io/Devanshujamwal/`. This is a planned address, not a claim that hosting is already enabled. There is no platform branding in the website.
+
+## Builds and future updates
+
+```bash
+pnpm run build        # Next.js static export into out/ for a root-domain host
+pnpm run build:pages  # Build for /Devanshujamwal and refresh docs/
+```
+
+After editing content on this branch, run `pnpm run build:pages`, then commit the source and `docs/` together. A push to `portfolio` will redeploy the site after Pages is enabled for that branch and folder.
+
+For a dedicated repository named `Devanshujamwal.github.io`, set `NEXT_PUBLIC_BASE_PATH` to an empty string when running `build:pages` and select that repository's publishing branch and `/docs`. Other repository names need their matching base path. Custom domains require the host's domain settings and DNS records.
+
+Contact uses the visitor's email application. There is no server-side email delivery or database.
+
+## Editing content
+
+Edit `data/portfolio.ts` for identity, contact links, skills, experience, education, project summaries, case-study content, and evidence.
+
+Each project has nine sections: Overview, Objective, Architecture, Technologies, Implementation, Troubleshooting, Validation, What I Learned, and Screenshots / Evidence. Every project has a shareable route under `app/projects/[slug]/`.
+
+- Leave unknown information as an explicit `[ADD ...]` placeholder.
+- Add personal reflections and individual contributions in your own words.
+- Do not convert a proposed check into a completed test without actual output.
+- `implementation`, `troubleshooting`, `validation`, and `learned` accept `{ title, text, placeholder? }` notes.
+- Evidence accepts `{ title, description, href?, image?, alt?, placeholder? }`.
+- Network, Azure, security, and Python diagrams are editable in `components/portfolio/architecture.tsx`. The conceptual diagrams are labelled; update them only from verified project records.
+
+## Evidence provenance
+
+Two existing public repositories were reviewed:
+
+- `Devanshujamwal/Network-Design-Company-Infrastructure-Implementation`: original Packet Tracer file, assignment brief, and network report. The included PNGs are faithful renders of report pages 12 and 13. No credentials or student-number pages are included. Runtime connectivity results remain placeholders.
+- `Devanshujamwal/Library-management-system`: `book.py`, `library_app.py`, and `test_book.py`. The case study describes the inspected source and distinguishes current code-review findings from historical troubleshooting. The supplied test_book.py was executed during review; the exact stdout and source blob identifiers are in public/projects/python-validation.txt. This is not a claim that the whole application passed, or that a historical fix was completed.
+
+The original project repositories have not been modified. The network brief and report use inconsistent city labels; the conceptual diagram preserves the original portfolio brief, with a note to reconcile the .pkt file. Azure and Wazuh case studies contain explicit editable placeholders wherever implementation details or outcomes were not supplied.
+
+## Resume and contact
+
+Place the PDF at `public/resume/Devanshu-Jamwal-Resume.pdf`, then set `portfolio.resume.available` to `true`. The resume control otherwise shows an honest missing-file state instead of a broken download.
+
+The supplied email, LinkedIn, and GitHub addresses are configured in `portfolio`. The contact form opens the visitor's email app with the entered fields; it never reports that a message has been sent. Update the same configuration to change contact destinations.
+
+## Structure
+
+```text
+app/                     Home, case-study routes, metadata, global design tokens
+components/portfolio/    Navigation, resume, architecture diagrams, lab, contact
+components/ui/           Existing accessible UI primitives
+lib/portfolio-paths.ts   Static-host asset paths
+data/portfolio.ts        Central editable content
+public/projects/         Real evidence images
+public/resume/           Resume PDF
+public/images/           Optional user-supplied images
+docs/                    Prebuilt website published by GitHub Pages
+```
+
+## Accessibility and design
+
+Semantic sections, readable type, visible keyboard focus, a skip link, Radix-based navigation and dialogs, keyboard-operated lab tabs, and reduced-motion support. The site uses no glow effects or decorative gradients. Diagrams have accessible descriptions and can scroll inside their frame on small screens.
