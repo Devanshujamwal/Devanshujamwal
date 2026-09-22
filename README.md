@@ -24,27 +24,25 @@ I’m an early-career IT professional and SAIT Information Technology Services g
 ### 01 · Enterprise Multi-Site Network Infrastructure
 Cisco Packet Tracer project covering IPv4/IPv6 addressing, subnetting, VLANs, OSPF, DHCP, NAT, DNS, and multi-site connectivity.
 
-- [GitHub case study](./case-studies/enterprise-network/)
-- [Source repository](https://github.com/Devanshujamwal/Network-Design-Company-Infrastructure-Implementation)
+- [Project repository](https://github.com/Devanshujamwal/Network-Design-Company-Infrastructure-Implementation)
 - [Portfolio view](https://devanshujamwal.github.io/Devanshujamwal/projects/enterprise-network/)
 
 ### 02 · Microsoft Azure Cloud Infrastructure Lab
 Hands-on cloud infrastructure work covering VMs, virtual networks, NSGs, RBAC, storage, Azure Monitor, and Log Analytics.
 
-- [GitHub case study](./case-studies/azure-infrastructure/)
+- [Project repository](https://github.com/Devanshujamwal/Azure-Cloud-Infrastructure-Lab)
 - [Portfolio view](https://devanshujamwal.github.io/Devanshujamwal/projects/azure-infrastructure/)
 
 ### 03 · Security Monitoring & Threat Detection Lab
 Cybersecurity lab focused on Windows/Linux events, Wazuh/SIEM concepts, Wireshark, network context, and investigation methodology.
 
-- [GitHub case study](./case-studies/security-monitoring/)
+- [Project repository](https://github.com/Devanshujamwal/Security-Monitoring-Threat-Detection-Lab)
 - [Portfolio view](https://devanshujamwal.github.io/Devanshujamwal/projects/security-monitoring/)
 
 ### 04 · Python Library Management System
 Three-person academic Python project using OOP, file I/O, catalogue operations, debugging, and repeatable model checks.
 
-- [GitHub case study](./case-studies/python-library-system/)
-- [Source repository](https://github.com/Devanshujamwal/Library-management-system)
+- [Project repository](https://github.com/Devanshujamwal/Library-management-system)
 - [Portfolio view](https://devanshujamwal.github.io/Devanshujamwal/projects/python-library-system/)
 
 ## Education
