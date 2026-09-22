@@ -25,7 +25,6 @@ export const experiences = [
   { role: "IT Technician", company: "Excitel", date: "Jan 2023 – Nov 2023", location: "New Delhi, India", points: ["Diagnosed and resolved hardware, software, and internet-connectivity issues for residential and business customers while collaborating with ISPs and technical teams to restore network connectivity.", "Migrated endpoint-security software from desktop-based solutions to cloud-based platforms and assisted with hardware and software asset management."] },
   { role: "IT Support Intern", company: "Hathway", date: "Jul 2022 – Dec 2022", location: "New Delhi, India", points: ["Resolved 20+ help-desk tickets daily involving Windows devices, hardware, software, and connectivity issues.", "Installed and configured Windows 8/10/11, macOS, and Linux devices while supporting employee onboarding and end-user troubleshooting."] },
 ];
-export type Evidence = { title: string; description: string; href?: string; image?: string; alt?: string; placeholder?: string };
 export type CaseNote = { title: string; text: string; placeholder?: string };
 export type Project = {
   slug: string; number: string; title: string; category: string; type: string;
@@ -33,7 +32,7 @@ export type Project = {
   diagram: "network" | "azure" | "security" | "python"; diagramCaption: string;
   technologies: string[]; featuredTechnologies: string[]; github?: string;
   implementation: CaseNote[]; troubleshooting: CaseNote[]; validation: CaseNote[];
-  learned: CaseNote[]; evidence: Evidence[];
+  learned: CaseNote[];
 };
 const networkRepo = "https://github.com/Devanshujamwal/Network-Design-Company-Infrastructure-Implementation";
 const pythonRepo = "https://github.com/Devanshujamwal/Library-management-system";
@@ -63,7 +62,6 @@ export const projects: Project[] = [
       { title: "Network design at scale", text: "The project strengthened my understanding of how subnet planning, consistent addressing, routing, switching, and shared services depend on one another in a multi-site environment." },
       { title: "Documentation matters", text: "It also showed why accurate interface and gateway documentation is essential: a small inconsistency can complicate troubleshooting even when the overall design is sound." },
     ],
-    evidence: [],
   },
   {
     slug: "azure-infrastructure", number: "02", title: "Microsoft Azure Cloud Infrastructure Lab", category: "Cloud infrastructure", type: "Hands-on lab",
@@ -90,7 +88,6 @@ export const projects: Project[] = [
       { title: "Cloud systems are connected systems", text: "The strongest takeaway was that a VM is only one part of the service: networking, identity, permissions, storage, and monitoring all affect whether the environment is secure and supportable." },
       { title: "Operational visibility", text: "Monitoring and logs are most useful when they are designed into the environment rather than treated as an afterthought during troubleshooting." },
     ],
-    evidence: [],
   },
   {
     slug: "security-monitoring", number: "03", title: "Security Monitoring & Threat Detection Lab", category: "Security monitoring", type: "Hands-on cybersecurity lab",
@@ -116,7 +113,6 @@ export const projects: Project[] = [
       { title: "Alerts need context", text: "A detection is a starting point, not a conclusion. Reliable investigation depends on log quality, endpoint context, network evidence, and an understanding of normal behaviour." },
       { title: "Security and operations overlap", text: "The lab connected security monitoring with core IT skills such as Windows/Linux administration, networking, troubleshooting, and clear documentation." },
     ],
-    evidence: [],
   },
   {
     slug: "python-library-system", number: "04", title: "Python Library Management System", category: "Scripting & software", type: "Academic software project · three-person team",
@@ -139,11 +135,6 @@ export const projects: Project[] = [
       { title: "Execution evidence", text: "The supplied test_book.py was executed during the portfolio review on 21 September 2026 and exited with code 0. Its output demonstrates Book construction, borrowing, title matching, returning, setters, and formatted records; this verifies the test script rather than every application path." },
     ],
     learned: [{ title: "OOP and maintainability", text: "The project reinforced separating data and behaviour into a reusable class, keeping catalogue operations in application functions, and using repeatable tests when changing program behaviour." }, { title: "Team-code review", text: "Working from a shared codebase also highlights the value of clear ownership, consistent naming, scoped variables, and tests that make integration problems easier to diagnose." }],
-    evidence: [
-      { title: "Book model", description: "Class definition and record behaviour.", href: pythonRepo + "/blob/main/book.py" },
-      { title: "Application source", description: "Catalogue and command-line functions.", href: pythonRepo + "/blob/main/library_app.py" },
-      { title: "Test script", description: "Supplied print-based checks for the Book class.", href: pythonRepo + "/blob/main/test_book.py" },
-    ],
   },
 ];
 
