@@ -7,4 +7,4 @@ This index mirrors the four featured projects on my portfolio and links directly
 3. [Security Monitoring & Threat Detection Lab](https://github.com/Devanshujamwal/Security-Monitoring-Threat-Detection-Lab) — Wazuh, SIEM, Windows/Linux, Wireshark, Palo Alto concepts
 4. [Python Library Management System](https://github.com/Devanshujamwal/Library-management-system) — Python, OOP, file I/O, debugging, testing
 
-**Live portfolio:** https://devanshujamwal.github.io/Devanshujamwal/
+**Live portfolio:** https://devanshujamwal.github.io/
