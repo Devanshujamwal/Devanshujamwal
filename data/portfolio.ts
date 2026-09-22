@@ -22,8 +22,8 @@ export const skillGroups = [
   { name: "Programming", skills: ["Python", "C/C++", "HTML/CSS", "Next.js"] },
 ];
 export const experiences = [
-  { role: "IT Technician", company: "Excitel", date: "Jan 2023 – Nov 2023", location: "New Delhi, India", points: ["Diagnosed hardware, software, and internet-connectivity issues for residential and business customers and collaborated with ISP and technical teams to restore service.", "Supported migration from desktop network-protection software to cloud-based security solutions and assisted with hardware and software inventory management."] },
-  { role: "IT Support Intern", company: "Hathway", date: "Jul 2022 – Dec 2022", location: "New Delhi, India", points: ["Resolved 20+ help-desk tickets daily involving Windows devices, hardware, software, and connectivity issues.", "Installed and troubleshot Windows, macOS, and Linux systems while supporting employee onboarding and end-user issues."] },
+  { role: "IT Technician", company: "Excitel", date: "Jan 2023 – Nov 2023", location: "New Delhi, India", points: ["Diagnosed and resolved hardware, software, and internet-connectivity issues for residential and business customers while collaborating with ISPs and technical teams to restore network connectivity.", "Migrated endpoint-security software from desktop-based solutions to cloud-based platforms and assisted with hardware and software asset management."] },
+  { role: "IT Support Intern", company: "Hathway", date: "Jul 2022 – Dec 2022", location: "New Delhi, India", points: ["Resolved 20+ help-desk tickets daily involving Windows devices, hardware, software, and connectivity issues.", "Installed and configured Windows 8/10/11, macOS, and Linux devices while supporting employee onboarding and end-user troubleshooting."] },
 ];
 export type Evidence = { title: string; description: string; href?: string; image?: string; alt?: string; placeholder?: string };
 export type CaseNote = { title: string; text: string; placeholder?: string };
