@@ -68,7 +68,7 @@ export const projects: Project[] = [
     overview: "A hands-on Azure learning environment covering compute, virtual networking, access control, storage, security controls, monitoring, and Windows/Linux administration.",
     objective: "Build practical familiarity with how Azure compute, networking, permissions, storage, and monitoring work together to support a manageable cloud environment.", environment: "Microsoft Azure · non-production academic lab", role: "Hands-on cloud infrastructure coursework", diagram: "azure",
     diagramCaption: "Conceptual Azure architecture showing the relationship between virtual machines, virtual networking, security controls, identity/access, storage, and monitoring.",
-    technologies: ["Microsoft Azure", "Virtual Machines", "Virtual Networks", "NSGs", "RBAC", "Azure Storage", "Azure Monitor", "Log Analytics", "Windows", "Linux"], featuredTechnologies: ["Azure", "Virtual Networks", "RBAC", "Monitoring"], github: "https://github.com/Devanshujamwal/Devanshujamwal/tree/main/case-studies/azure-infrastructure",
+    technologies: ["Microsoft Azure", "Virtual Machines", "Virtual Networks", "NSGs", "RBAC", "Azure Storage", "Azure Monitor", "Log Analytics", "Windows", "Linux"], featuredTechnologies: ["Azure", "Virtual Networks", "RBAC", "Monitoring"], github: "https://github.com/Devanshujamwal/Azure-Cloud-Infrastructure-Lab",
     implementation: [
       { title: "Compute and operating systems", text: "Worked with Azure virtual machines in Windows and Linux learning scenarios, connecting operating-system administration with cloud resource management." },
       { title: "Virtual networking and security", text: "Practised Azure Virtual Network concepts and Network Security Groups to understand how subnets, traffic rules, and access paths shape connectivity." },
@@ -94,7 +94,7 @@ export const projects: Project[] = [
     overview: "A cybersecurity learning lab focused on Windows and Linux events, SIEM fundamentals, and investigation context. It is presented as lab work; no professional SOC experience or detection results are claimed.",
     objective: "Understand how endpoint and network telemetry becomes useful investigation context and how analysts distinguish an alert from a verified security incident.", environment: "Windows / Linux · cybersecurity lab", role: "Hands-on security monitoring coursework", diagram: "security",
     diagramCaption: "Conceptual monitoring flow from Windows/Linux endpoints and network telemetry into centralized SIEM review and investigation.",
-    technologies: ["Wazuh", "SIEM", "Windows", "Linux", "Wireshark", "Palo Alto", "MITRE ATT&CK concepts"], featuredTechnologies: ["Wazuh", "Windows / Linux", "Wireshark", "SIEM"], github: "https://github.com/Devanshujamwal/Devanshujamwal/tree/main/case-studies/security-monitoring",
+    technologies: ["Wazuh", "SIEM", "Windows", "Linux", "Wireshark", "Palo Alto", "MITRE ATT&CK concepts"], featuredTechnologies: ["Wazuh", "Windows / Linux", "Wireshark", "SIEM"], github: "https://github.com/Devanshujamwal/Security-Monitoring-Threat-Detection-Lab",
     implementation: [
       { title: "Endpoint visibility", text: "Worked with Windows and Linux security-event concepts and Wazuh/SIEM fundamentals to understand how endpoint activity can be collected and reviewed centrally." },
       { title: "Network context", text: "Used Wireshark and firewall/security coursework concepts to relate endpoint events to network behaviour, traffic inspection, and policy enforcement." },
