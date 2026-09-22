@@ -4,14 +4,13 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { ArrowUpRight, Download, Menu, X } from "lucide-react";
 import { Sheet, SheetClose, SheetContent, SheetDescription, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
-import { Dialog, DialogContent, DialogDescription, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { navigation, portfolio } from "@/data/portfolio";
 import { assetPath } from "@/lib/portfolio-paths";
 
 export function ResumeButton({ small = false }: { small?: boolean }) {
-  if (portfolio.resume.available) return <a className={`button button-outline ${small ? "button-small" : ""}`} href={assetPath(portfolio.resume.path)} download><Download aria-hidden="true" />{small ? "Resume" : "Download resume"}</a>;
-  return <Dialog><DialogTrigger asChild><Button variant="outline" className={`button button-outline ${small ? "button-small" : ""}`}><Download aria-hidden="true" />{small ? "Resume" : "Download resume"}</Button></DialogTrigger><DialogContent className="portfolio-dialog"><DialogTitle>Resume</DialogTitle><DialogDescription>The resume PDF hasn’t been added yet.</DialogDescription><p className="placeholder">[ADD RESUME PDF]</p></DialogContent></Dialog>;
+  if (!portfolio.resume.available) return null;
+  return <a className={`button button-outline ${small ? "button-small" : ""}`} href={assetPath(portfolio.resume.path)} download><Download aria-hidden="true" />{small ? "Resume" : "Download resume"}</a>;
 }
 
 export function SiteHeader() {
