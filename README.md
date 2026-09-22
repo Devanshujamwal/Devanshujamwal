@@ -7,7 +7,7 @@ I’m an early-career IT professional and SAIT Information Technology Services g
 
 ## Portfolio
 
-**Live portfolio:** https://devanshujamwal.github.io/
+**Live portfolio:** https://devanshujamwal.github.io/Devanshujamwal/
 
 ## Technical focus
 
@@ -25,25 +25,25 @@ I’m an early-career IT professional and SAIT Information Technology Services g
 Cisco Packet Tracer project covering IPv4/IPv6 addressing, subnetting, VLANs, OSPF, DHCP, NAT, DNS, and multi-site connectivity.
 
 - [Project repository](https://github.com/Devanshujamwal/Network-Design-Company-Infrastructure-Implementation)
-- [Portfolio view](https://devanshujamwal.github.io/projects/enterprise-network/)
+- [Portfolio view](https://devanshujamwal.github.io/Devanshujamwal/projects/enterprise-network/)
 
 ### 02 · Microsoft Azure Cloud Infrastructure Lab
 Hands-on cloud infrastructure work covering VMs, virtual networks, NSGs, RBAC, storage, Azure Monitor, and Log Analytics.
 
 - [Project repository](https://github.com/Devanshujamwal/Azure-Cloud-Infrastructure-Lab)
-- [Portfolio view](https://devanshujamwal.github.io/projects/azure-infrastructure/)
+- [Portfolio view](https://devanshujamwal.github.io/Devanshujamwal/projects/azure-infrastructure/)
 
 ### 03 · Security Monitoring & Threat Detection Lab
 Cybersecurity lab focused on Windows/Linux events, Wazuh/SIEM concepts, Wireshark, network context, and investigation methodology.
 
 - [Project repository](https://github.com/Devanshujamwal/Security-Monitoring-Threat-Detection-Lab)
-- [Portfolio view](https://devanshujamwal.github.io/projects/security-monitoring/)
+- [Portfolio view](https://devanshujamwal.github.io/Devanshujamwal/projects/security-monitoring/)
 
 ### 04 · Python Library Management System
 Three-person academic Python project using OOP, file I/O, catalogue operations, debugging, and repeatable model checks.
 
 - [Project repository](https://github.com/Devanshujamwal/Library-management-system)
-- [Portfolio view](https://devanshujamwal.github.io/projects/python-library-system/)
+- [Portfolio view](https://devanshujamwal.github.io/Devanshujamwal/projects/python-library-system/)
 
 ## Education
 
@@ -56,7 +56,7 @@ Relevant areas include networking, cloud computing, cybersecurity, virtualizatio
 
 - **Email:** jamwaldevanshu@gmail.com
 - **LinkedIn:** https://www.linkedin.com/in/devanshujamwal/
-- **Portfolio:** https://devanshujamwal.github.io/
+- **Portfolio:** https://devanshujamwal.github.io/Devanshujamwal/
 
 ---
 Open to entry-level opportunities in IT support, service desk, systems, networking, infrastructure, NOC, and cloud support.
