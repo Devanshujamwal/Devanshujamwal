@@ -8,7 +8,6 @@ export const portfolio = {
   email: "jamwaldevanshu@gmail.com",
   github: "https://github.com/Devanshujamwal",
   linkedin: "https://www.linkedin.com/in/devanshujamwal/",
-  resume: { path: "/resume/Devanshu-Jamwal-Resume.pdf", available: false },
 };
 
 export const navigation = ["Home", "Projects", "About", "Skills", "Experience", "Education", "Contact"];
@@ -25,7 +24,7 @@ export const experiences = [
   { role: "IT Technician", company: "Excitel", date: "Jan 2023 – Nov 2023", location: "New Delhi, India", points: ["Diagnosed and resolved hardware, software, and internet-connectivity issues for residential and business customers while collaborating with ISPs and technical teams to restore network connectivity.", "Migrated endpoint-security software from desktop-based solutions to cloud-based platforms and assisted with hardware and software asset management."] },
   { role: "IT Support Intern", company: "Hathway", date: "Jul 2022 – Dec 2022", location: "New Delhi, India", points: ["Resolved 20+ help-desk tickets daily involving Windows devices, hardware, software, and connectivity issues.", "Installed and configured Windows 8/10/11, macOS, and Linux devices while supporting employee onboarding and end-user troubleshooting."] },
 ];
-export type CaseNote = { title: string; text: string; placeholder?: string };
+export type CaseNote = { title: string; text: string };
 export type Project = {
   slug: string; number: string; title: string; category: string; type: string;
   summary: string; overview: string; objective: string; environment: string; role: string;
@@ -127,8 +126,8 @@ export const projects: Project[] = [
       { title: "Collaborative development", text: "The repository represents a three-person academic team project. Because the source does not attribute individual functions, this portfolio does not claim sole ownership of specific modules." },
     ],
     troubleshooting: [
-      { title: "Code-review observation", text: "In the current source, load_books() assigns FILE locally while save_books() references FILE outside that scope. This is a review finding, not a claimed historical fix." },
-      { title: "Debugging insight", text: "Reviewing the source highlights a scope issue: load_books() assigns FILE locally while save_books() references FILE outside that scope. Identifying this type of defect reinforces tracing variable lifetime and data flow before changing code." },
+      { title: "Code-review observation", text: "In the current source, load_books() assigns FILE locally while save_books() references FILE outside that scope. This is a code-review finding rather than a claim that the original submission already corrected the issue." },
+      { title: "Debugging approach", text: "A reliable correction would reproduce the failure, trace the variable scope and file path through the program, make the smallest change that gives both functions a consistent source of truth, then rerun the existing checks and exercise the save path." },
     ],
     validation: [
       { title: "Existing test script", text: "test_book.py exercises construction, borrowing, title matching, returning, setters, and formatted output. It prints observations rather than using assertions." },
