@@ -2,7 +2,6 @@ import Link from "next/link";
 import { ArrowDown, ArrowUpRight, ChevronRight, Code2, Mail, MapPin } from "lucide-react";
 import { portfolio, projects, skillGroups, experiences, education } from "@/data/portfolio";
 import { Architecture } from "@/components/portfolio/architecture";
-import { ResumeButton } from "@/components/portfolio/site-chrome";
 import { ITLab } from "@/components/portfolio/lab";
 import { ContactForm } from "@/components/portfolio/contact-form";
 
@@ -11,7 +10,7 @@ function SectionHeading({number,eyebrow,title,children}:{number:string;eyebrow:s
 }
 export default function Home(){return <main id="main-content">
   <section id="home" className="hero container">
-    <div className="hero-copy"><p className="eyebrow"><MapPin aria-hidden="true"/>{portfolio.location}</p><h1><span>Hi, I’m</span>Devanshu<br/>Jamwal<span className="name-period">.</span></h1><p className="hero-specialties">{portfolio.headline}</p><p className="hero-intro">{portfolio.intro}</p><div className="hero-actions"><a className="button button-primary" href="#projects">Explore my work <ArrowDown aria-hidden="true"/></a><ResumeButton/></div><div className="hero-socials"><a className="text-link" href={portfolio.github} target="_blank" rel="noreferrer"><Code2 aria-hidden="true"/>GitHub <ArrowUpRight aria-hidden="true"/></a>{portfolio.linkedin&&<a className="text-link" href={portfolio.linkedin} target="_blank" rel="noreferrer"><span className="linkedin-icon" aria-hidden="true">in</span>LinkedIn <ArrowUpRight aria-hidden="true"/></a>}</div></div>
+    <div className="hero-copy"><p className="eyebrow"><MapPin aria-hidden="true"/>{portfolio.location}</p><h1><span>Hi, I’m</span>Devanshu<br/>Jamwal<span className="name-period">.</span></h1><p className="hero-specialties">{portfolio.headline}</p><p className="hero-intro">{portfolio.intro}</p><div className="hero-actions"><a className="button button-primary" href="#projects">Explore my work <ArrowDown aria-hidden="true"/></a></div><div className="hero-socials"><a className="text-link" href={portfolio.github} target="_blank" rel="noreferrer"><Code2 aria-hidden="true"/>GitHub <ArrowUpRight aria-hidden="true"/></a>{portfolio.linkedin&&<a className="text-link" href={portfolio.linkedin} target="_blank" rel="noreferrer"><span className="linkedin-icon" aria-hidden="true">in</span>LinkedIn <ArrowUpRight aria-hidden="true"/></a>}</div></div>
     <aside className="hero-profile" aria-label="Professional profile"><div className="profile-index"><span>PROFILE</span><span>DJ / IT</span></div><h2>People.<br/>Systems.<br/><span>Problem solving.</span></h2><div className="profile-rule"/><div className="terminal-intro"><p><span>devanshu@portfolio:~$</span> whoami</p><ul><li>IT Services Graduate</li><li>Calgary, Alberta</li><li>Systems / Networking / Cloud</li><li>Open to IT Opportunities</li></ul></div><p className="profile-foot">SAIT · Information Technology Services</p></aside>
   </section>
 
