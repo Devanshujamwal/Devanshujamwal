@@ -44,7 +44,7 @@ export const projects: Project[] = [
     overview: "An academic network infrastructure project for CPNT-219. The team report assigns Devanshu to Site 3 and includes his IPv4 VLSM and IPv6 addressing tables. The repository includes the original Packet Tracer file.",
     objective: "Connect the lab sites and document how addressing, routing, and local services support end-to-end connectivity.",
     environment: "Cisco Packet Tracer · academic lab", role: "Site 3 · IPv4/IPv6 addressing and network documentation", diagram: "network",
-    diagramCaption: "Conceptual multi-site topology illustrating routed connectivity, local switching, addressing, and network services used in the academic design."
+    diagramCaption: "Conceptual multi-site topology illustrating routed connectivity, local switching, addressing, and network services used in the academic design.",
     technologies: ["Cisco", "Packet Tracer", "TCP/IP", "IPv4", "Subnetting", "VLANs", "Routing", "OSPF", "DHCP", "NAT", "DNS"], featuredTechnologies: ["Cisco", "Packet Tracer", "OSPF", "VLANs"], github: networkRepo,
     implementation: [
       { title: "IPv4 subnet design", text: "Designed and documented Site 3 addressing from the assigned 10.9.0.0/18 space, using VLSM to support LANs of different sizes. The report includes /21, /24, /24, and /25 subnet entries plus router, switch-management, endpoint, and gateway addressing." },
