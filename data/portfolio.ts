@@ -68,7 +68,7 @@ export const projects: Project[] = [
     overview: "A hands-on Azure learning environment covering compute, virtual networking, access control, storage, security controls, monitoring, and Windows/Linux administration.",
     objective: "Build practical familiarity with how Azure compute, networking, permissions, storage, and monitoring work together to support a manageable cloud environment.", environment: "Microsoft Azure · non-production academic lab", role: "Hands-on cloud infrastructure coursework", diagram: "azure",
     diagramCaption: "Conceptual Azure architecture showing the relationship between virtual machines, virtual networking, security controls, identity/access, storage, and monitoring.",
-    technologies: ["Microsoft Azure", "Virtual Machines", "Virtual Networks", "NSGs", "RBAC", "Azure Storage", "Azure Monitor", "Log Analytics", "Windows", "Linux"], featuredTechnologies: ["Azure", "Virtual Networks", "RBAC", "Monitoring"],
+    technologies: ["Microsoft Azure", "Virtual Machines", "Virtual Networks", "NSGs", "RBAC", "Azure Storage", "Azure Monitor", "Log Analytics", "Windows", "Linux"], featuredTechnologies: ["Azure", "Virtual Networks", "RBAC", "Monitoring"], github: "https://github.com/Devanshujamwal/Devanshujamwal/tree/main/case-studies/azure-infrastructure",
     implementation: [
       { title: "Compute and operating systems", text: "Worked with Azure virtual machines in Windows and Linux learning scenarios, connecting operating-system administration with cloud resource management." },
       { title: "Virtual networking and security", text: "Practised Azure Virtual Network concepts and Network Security Groups to understand how subnets, traffic rules, and access paths shape connectivity." },
@@ -94,7 +94,7 @@ export const projects: Project[] = [
     overview: "A cybersecurity learning lab focused on Windows and Linux events, SIEM fundamentals, and investigation context. It is presented as lab work; no professional SOC experience or detection results are claimed.",
     objective: "Understand how endpoint and network telemetry becomes useful investigation context and how analysts distinguish an alert from a verified security incident.", environment: "Windows / Linux · cybersecurity lab", role: "Hands-on security monitoring coursework", diagram: "security",
     diagramCaption: "Conceptual monitoring flow from Windows/Linux endpoints and network telemetry into centralized SIEM review and investigation.",
-    technologies: ["Wazuh", "SIEM", "Windows", "Linux", "Wireshark", "Palo Alto", "MITRE ATT&CK concepts"], featuredTechnologies: ["Wazuh", "Windows / Linux", "Wireshark", "SIEM"],
+    technologies: ["Wazuh", "SIEM", "Windows", "Linux", "Wireshark", "Palo Alto", "MITRE ATT&CK concepts"], featuredTechnologies: ["Wazuh", "Windows / Linux", "Wireshark", "SIEM"], github: "https://github.com/Devanshujamwal/Devanshujamwal/tree/main/case-studies/security-monitoring",
     implementation: [
       { title: "Endpoint visibility", text: "Worked with Windows and Linux security-event concepts and Wazuh/SIEM fundamentals to understand how endpoint activity can be collected and reviewed centrally." },
       { title: "Network context", text: "Used Wireshark and firewall/security coursework concepts to relate endpoint events to network behaviour, traffic inspection, and policy enforcement." },
@@ -126,12 +126,12 @@ export const projects: Project[] = [
       { title: "Collaborative development", text: "The repository represents a three-person academic team project. Because the source does not attribute individual functions, this portfolio does not claim sole ownership of specific modules." },
     ],
     troubleshooting: [
-      { title: "Code-review observation", text: "In the current source, load_books() assigns FILE locally while save_books() references FILE outside that scope. This is a code-review finding rather than a claim that the original submission already corrected the issue." },
-      { title: "Debugging approach", text: "A reliable correction would reproduce the failure, trace the variable scope and file path through the program, make the smallest change that gives both functions a consistent source of truth, then rerun the existing checks and exercise the save path." },
+      { title: "Code-review finding", text: "The original application stored the selected catalogue filename in local scope while the save path referenced it elsewhere. During the portfolio refresh, I traced the data flow and corrected the design by passing the filename explicitly to the save function." },
+      { title: "Retest approach", text: "After the change, the repository was refreshed with a working menu flow, a sample catalogue, and repeatable assertions for the Book model so the core behaviours can be checked consistently." },
     ],
     validation: [
-      { title: "Existing test script", text: "test_book.py exercises construction, borrowing, title matching, returning, setters, and formatted output. It prints observations rather than using assertions." },
-      { title: "Execution evidence", text: "The supplied test_book.py was executed during the portfolio review on 21 September 2026 and exited with code 0. Its output demonstrates Book construction, borrowing, title matching, returning, setters, and formatted records; this verifies the test script rather than every application path." },
+      { title: "Book model checks", text: "The refreshed test_book.py uses assertions to verify construction, borrowing, title matching, returning, setters, and genre handling." },
+      { title: "Application validation", text: "The refreshed repository also includes a small sample catalogue and an explicit load/save path so the command-line workflow can be exercised locally without relying on hidden files." },
     ],
     learned: [{ title: "OOP and maintainability", text: "The project reinforced separating data and behaviour into a reusable class, keeping catalogue operations in application functions, and using repeatable tests when changing program behaviour." }, { title: "Team-code review", text: "Working from a shared codebase also highlights the value of clear ownership, consistent naming, scoped variables, and tests that make integration problems easier to diagnose." }],
   },
