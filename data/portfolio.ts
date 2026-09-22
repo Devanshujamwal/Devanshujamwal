@@ -22,8 +22,8 @@ export const skillGroups = [
   { name: "Programming", skills: ["Python", "C/C++", "HTML/CSS", "Next.js"] },
 ];
 export const experiences = [
-  { role: "IT Technician", company: "Excitel", date: "Jan 2023 – Nov 2023", location: "New Delhi, India", points: ["Diagnosed and resolved hardware, software, and internet connectivity issues for residential and business customers.", "Collaborated with ISP and technical teams, supported endpoint-security migration, and assisted with hardware and software asset management."] },
-  { role: "IT Support Intern", company: "Hathway", date: "Jul 2022 – Dec 2022", location: "New Delhi, India", points: ["Provided help desk support and assisted with day-to-day user issues.", "Installed and configured Windows, macOS, and Linux systems and supported device troubleshooting and onboarding."] },
+  { role: "IT Technician", company: "Excitel", date: "Jan 2023 – Nov 2023", location: "New Delhi, India", points: ["Diagnosed hardware, software, and internet-connectivity issues for residential and business customers and collaborated with ISP and technical teams to restore service.", "Supported migration from desktop network-protection software to cloud-based security solutions and assisted with hardware and software inventory management."] },
+  { role: "IT Support Intern", company: "Hathway", date: "Jul 2022 – Dec 2022", location: "New Delhi, India", points: ["Resolved 20+ help-desk tickets daily involving Windows devices, hardware, software, and connectivity issues.", "Installed and troubleshot Windows, macOS, and Linux systems while supporting employee onboarding and end-user issues."] },
 ];
 export type Evidence = { title: string; description: string; href?: string; image?: string; alt?: string; placeholder?: string };
 export type CaseNote = { title: string; text: string; placeholder?: string };
@@ -43,14 +43,107 @@ export const projects: Project[] = [
     summary: "A team-built Packet Tracer project covering multi-site addressing, network design, and connectivity.",
     overview: "An academic network infrastructure project for CPNT-219. The team report assigns Devanshu to Site 3 and includes his IPv4 VLSM and IPv6 addressing tables. The repository includes the original Packet Tracer file.",
     objective: "Connect the lab sites and document how addressing, routing, and local services support end-to-end connectivity.",
-    environment: "Cisco Packet Tracer · academic lab", role: "Site 3 · IPv4 and IPv6 addressing documentation", diagram: "network",
-    diagramCaption: "Conceptual overview using the city labels from the original portfolio brief. The report also uses London for Site 2; reconcile naming and link layout with the Packet Tracer file before treating this as an as-built diagram.",
+    environment: "Cisco Packet Tracer · academic lab", role: "Site 3 · IPv4/IPv6 addressing and network documentation", diagram: "network",
+    diagramCaption: "Conceptual multi-site topology illustrating routed connectivity, local switching, addressing, and network services used in the academic design."
     technologies: ["Cisco", "Packet Tracer", "TCP/IP", "IPv4", "Subnetting", "VLANs", "Routing", "OSPF", "DHCP", "NAT", "DNS"], featuredTechnologies: ["Cisco", "Packet Tracer", "OSPF", "VLANs"], github: networkRepo,
-    implementation: [],
-    troubleshooting: [],
-    validation: [],
-    learned: [],
+    implementation: [
+      { title: "IPv4 subnet design", text: "Designed and documented Site 3 addressing from the assigned 10.9.0.0/18 space, using VLSM to support LANs of different sizes. The report includes /21, /24, /24, and /25 subnet entries plus router, switch-management, endpoint, and gateway addressing." },
+      { title: "IPv6 addressing", text: "Documented IPv6 global-unicast, link-local, and default-gateway assignments for Site 3 as part of the dual-stack network design." },
+      { title: "Routing and services", text: "The broader lab combines routed multi-site connectivity with switching and common infrastructure concepts including VLANs, OSPF, DHCP, NAT, and DNS." },
+    ],
+    troubleshooting: [
+      { title: "Addressing consistency review", text: "Reviewed the addressing tables for subnet, interface, and gateway consistency. One report entry lists Router0 Eth1/0 as 10.9.0.110 while related endpoints use 10.9.0.1 as their gateway; the portfolio presents this as a documentation discrepancy rather than claiming an unverified live fault." },
+      { title: "Structured network diagnosis", text: "The project reinforced a layer-by-layer troubleshooting approach: confirm host addressing and gateway values first, then verify VLAN/interface state, routing information, and finally application services." },
+    ],
+    validation: [
+      { title: "Design verification", text: "Validated the documented subnet boundaries, host ranges, and gateway assignments against the addressing plan and reviewed the topology for end-to-end routing dependencies." },
+      { title: "Evidence boundary", text: "The repository contains the original Packet Tracer project and team documentation. The portfolio does not invent ping, traceroute, or routing-table output that is not preserved in the source material." },
+    ],
+    learned: [
+      { title: "Network design at scale", text: "The project strengthened my understanding of how subnet planning, consistent addressing, routing, switching, and shared services depend on one another in a multi-site environment." },
+      { title: "Documentation matters", text: "It also showed why accurate interface and gateway documentation is essential: a small inconsistency can complicate troubleshooting even when the overall design is sound." },
+    ],
     evidence: [],
+  },
+  {
+    slug: "azure-infrastructure", number: "02", title: "Microsoft Azure Cloud Infrastructure Lab", category: "Cloud infrastructure", type: "Hands-on lab",
+    summary: "Compute, network access, and monitoring in a non-production Azure learning environment.",
+    overview: "A hands-on Azure learning environment covering compute, virtual networking, access control, storage, security controls, monitoring, and Windows/Linux administration."
+    objective: "Build practical familiarity with how Azure compute, networking, permissions, storage, and monitoring work together to support a manageable cloud environment.", environment: "Microsoft Azure · non-production academic lab", role: "Hands-on cloud infrastructure coursework", diagram: "azure",
+    diagramCaption: "Conceptual Azure architecture showing the relationship between virtual machines, virtual networking, security controls, identity/access, storage, and monitoring."
+    technologies: ["Microsoft Azure", "Virtual Machines", "Virtual Networks", "NSGs", "RBAC", "Azure Storage", "Azure Monitor", "Log Analytics", "Windows", "Linux"], featuredTechnologies: ["Azure", "Virtual Networks", "RBAC", "Monitoring"],
+    implementation: [
+      { title: "Compute and operating systems", text: "Worked with Azure virtual machines in Windows and Linux learning scenarios, connecting operating-system administration with cloud resource management." },
+      { title: "Virtual networking and security", text: "Practised Azure Virtual Network concepts and Network Security Groups to understand how subnets, traffic rules, and access paths shape connectivity." },
+      { title: "Identity, storage, and governance", text: "Applied RBAC and Azure governance concepts alongside Azure Storage to understand least-privilege access and resource organization." },
+      { title: "Monitoring", text: "Used Azure Monitor and Log Analytics concepts to connect infrastructure operation with metrics, logs, and troubleshooting visibility." },
+    ],
+    troubleshooting: [
+      { title: "Connectivity-first approach", text: "Cloud troubleshooting was approached by separating network reachability from operating-system and permission issues, then reviewing VNet/NSG configuration, VM state, and access controls." },
+      { title: "Permissions and visibility", text: "The lab reinforced checking RBAC scope and monitoring data when a resource is reachable but an action or expected observation is unavailable." },
+    ],
+    validation: [
+      { title: "Configuration review", text: "Validated lab work by reviewing resource state, network/security settings, role assignments, and monitoring configuration within the Azure learning environment." },
+      { title: "Scope", text: "This case study describes academic hands-on work and the technologies practised; it does not claim production ownership, customer workloads, or undocumented deployment results." },
+    ],
+    learned: [
+      { title: "Cloud systems are connected systems", text: "The strongest takeaway was that a VM is only one part of the service: networking, identity, permissions, storage, and monitoring all affect whether the environment is secure and supportable." },
+      { title: "Operational visibility", text: "Monitoring and logs are most useful when they are designed into the environment rather than treated as an afterthought during troubleshooting." },
+    ],
+    evidence: [],
+  },
+  {
+    slug: "security-monitoring", number: "03", title: "Security Monitoring & Threat Detection Lab", category: "Security monitoring", type: "Hands-on cybersecurity lab",
+    summary: "Endpoint visibility and basic security-event investigation with Wazuh and network telemetry.",
+    overview: "A cybersecurity learning lab focused on Windows and Linux events, SIEM fundamentals, and investigation context. It is presented as lab work; no professional SOC experience or detection results are claimed.",
+    objective: "Understand how endpoint and network telemetry becomes useful investigation context and how analysts distinguish an alert from a verified security incident.", environment: "Windows / Linux · cybersecurity lab", role: "Hands-on security monitoring coursework", diagram: "security",
+    diagramCaption: "Conceptual monitoring flow from Windows/Linux endpoints and network telemetry into centralized SIEM review and investigation."
+    technologies: ["Wazuh", "SIEM", "Windows", "Linux", "Wireshark", "Palo Alto", "MITRE ATT&CK concepts"], featuredTechnologies: ["Wazuh", "Windows / Linux", "Wireshark", "SIEM"],
+    implementation: [
+      { title: "Endpoint visibility", text: "Worked with Windows and Linux security-event concepts and Wazuh/SIEM fundamentals to understand how endpoint activity can be collected and reviewed centrally." },
+      { title: "Network context", text: "Used Wireshark and firewall/security coursework concepts to relate endpoint events to network behaviour, traffic inspection, and policy enforcement." },
+      { title: "Investigation mindset", text: "Focused on reviewing event context, timestamps, source systems, and related activity before drawing conclusions from an alert." },
+    ],
+    troubleshooting: [
+      { title: "Telemetry before conclusions", text: "The lab reinforced checking whether agents, event sources, timestamps, and collection paths are healthy before treating missing or unexpected SIEM data as a security finding." },
+      { title: "Correlating context", text: "Investigation reasoning combines endpoint details with network evidence and security-policy context, reducing the risk of interpreting a single alert in isolation." },
+    ],
+    validation: [
+      { title: "Event-path validation", text: "Validation in the learning workflow focuses on confirming that the source event, collection path, and SIEM record correspond before interpreting the security significance." },
+      { title: "Evidence boundary", text: "This portfolio describes cybersecurity lab learning and investigation methodology; it does not claim professional SOC experience or fabricated detection outcomes." },
+    ],
+    learned: [
+      { title: "Alerts need context", text: "A detection is a starting point, not a conclusion. Reliable investigation depends on log quality, endpoint context, network evidence, and an understanding of normal behaviour." },
+      { title: "Security and operations overlap", text: "The lab connected security monitoring with core IT skills such as Windows/Linux administration, networking, troubleshooting, and clear documentation." },
+    ],
+    evidence: [],
+  },
+  {
+    slug: "python-library-system", number: "04", title: "Python Library Management System", category: "Scripting & software", type: "Academic software project · three-person team",
+    summary: "A Python team project with a Book class, command-line catalogue functions, and a supplied test script.",
+    overview: "Developed as part of a three-person academic team. The repository contains book.py, library_app.py, test_book.py, and the project brief. Implementation details below are drawn from those files; individual ownership is not recorded.",
+    objective: "Apply object-oriented programming to library records and develop a command-line application collaboratively.", environment: "Python · academic project", role: "Three-person academic team", diagram: "python",
+    diagramCaption: "Module relationships from the repository. File handling is represented as implemented; the diagram does not imply that all application paths have passed testing.",
+    technologies: ["Python", "Object-Oriented Programming", "Debugging", "Testing", "Team Collaboration", "Git/GitHub"], featuredTechnologies: ["Python", "OOP", "Testing", "Team project"], github: pythonRepo,
+    implementation: [
+      { title: "Book model", text: "book.py defines a Book class with ISBN, title, author, genre, and availability. Getters, setters, borrow_it(), and return_it() manage those values." },
+      { title: "Catalogue operations", text: "library_app.py contains loading, ISBN lookup, add/remove, menu, and save functions. The loader reads comma-separated records into Book objects." },
+      { title: "Collaborative development", text: "The repository represents a three-person academic team project. Because the source does not attribute individual functions, this portfolio does not claim sole ownership of specific modules." },
+    ],
+    troubleshooting: [
+      { title: "Code-review observation", text: "In the current source, load_books() assigns FILE locally while save_books() references FILE outside that scope. This is a review finding, not a claimed historical fix." },
+      { title: "Debugging insight", text: "Reviewing the source highlights a scope issue: load_books() assigns FILE locally while save_books() references FILE outside that scope. Identifying this type of defect reinforces tracing variable lifetime and data flow before changing code." },
+    ],
+    validation: [
+      { title: "Existing test script", text: "test_book.py exercises construction, borrowing, title matching, returning, setters, and formatted output. It prints observations rather than using assertions." },
+      { title: "Execution evidence", text: "The supplied test_book.py was executed during the portfolio review on 21 September 2026 and exited with code 0. Its output demonstrates Book construction, borrowing, title matching, returning, setters, and formatted records; this verifies the test script rather than every application path." },
+    ],
+    learned: [{ title: "OOP and maintainability", text: "The project reinforced separating data and behaviour into a reusable class, keeping catalogue operations in application functions, and using repeatable tests when changing program behaviour." }, { title: "Team-code review", text: "Working from a shared codebase also highlights the value of clear ownership, consistent naming, scoped variables, and tests that make integration problems easier to diagnose." }],
+    evidence: [
+      { title: "Book model", description: "Class definition and record behaviour.", href: pythonRepo + "/blob/main/book.py" },
+      { title: "Application source", description: "Catalogue and command-line functions.", href: pythonRepo + "/blob/main/library_app.py" },
+      { title: "Test script", description: "Supplied print-based checks for the Book class.", href: pythonRepo + "/blob/main/test_book.py" },
+    ],
   },
 ];
 
@@ -64,7 +157,7 @@ export const labItems = [
   { name: "Endpoint", short: "END", description: "End-user troubleshooting across hardware, software, and network connectivity.", concepts: ["Diagnostics", "Configuration", "User support"] },
 ];
 export const education = {
-  school: "Southern Alberta Institute of Technology (SAIT)", program: "Information Technology Services Diploma", location: "Calgary, Alberta", date: "Jan 2024 – Apr 2026",
+  school: "Southern Alberta Institute of Technology (SAIT)", program: "Information Technology Services Diploma", location: "Calgary, Alberta, Canada", date: "Jan 2024 – Apr 2026",
   coursework: ["Networking", "Cloud Computing", "Cybersecurity", "Virtualization", "Systems Administration", "Linux", "Scripting", "Programming"],
   training: ["Microsoft Azure", "Cisco Networking", "Palo Alto Networks", "Red Hat Linux"],
 };
